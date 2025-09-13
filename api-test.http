@@ -42,9 +42,20 @@ Accept: application/json
 POST {{baseUrl}}{{api}}/posts
 Content-Type: application/json
 Accept: application/json
-Authorization: Bearer 7|MPCSm30buB7Zl2gzNyDtIg5yr0mhiVxK813jMvE68ef54fc0
+Authorization: Bearer 3|8VAM7QBOROrSkoOe7gsa5uTFTfTz5ByBmtlcMxwh86a6318a
 
 {
   "title": "First Post",
+  "body": "This is the body text"
+}
+
+#### update post
+PATCH {{baseUrl}}{{api}}/posts/1
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer 4|LiNsGQHwABmXrBwii8X0RL6w3gmxEoErFZVOkpxkdec7660f
+
+{
+  "title": "Updated Post",
   "body": "This is the body text"
 }
