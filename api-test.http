@@ -11,13 +11,40 @@ Accept: application/json
 
 
 #### create new post
-# POST {{baseUrl}}{{api}}/posts
-# Content-Type: application/json
+POST {{baseUrl}}{{api}}/posts
+Content-Type: application/json
+Accept: application/json
 
-# {
-#   "title": "First Post",
-#   "body": "This is the body text"
-# }
+{
+  "title": "First Post",
+  "body": "This is the body text"
+}
 
 
 
+
+#### register auth
+POST {{baseUrl}}{{api}}/register
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "John Doe",
+    "email": "ni7@gmail.com",
+    "password":"123456",
+    "password_confirmation":"123456"
+}
+
+#### login auth
+POST {{baseUrl}}{{api}}/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "ni@gmail.com",
+    "password":"123456"
+}
+
+#### logout auth
+POST {{baseUrl}}{{api}}/logout
+Accept: application/json
