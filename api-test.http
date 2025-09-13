@@ -47,4 +47,7 @@ Accept: application/json
 
 #### logout auth
 POST {{baseUrl}}{{api}}/logout
+Content-Type: application/json
 Accept: application/json
+Authorization: Bearer 6|C9NVHxGOoOwcu6gKMtMAug91JDJti4WBrZ7o8jhD809d572d
+
