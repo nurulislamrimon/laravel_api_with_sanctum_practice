@@ -2,27 +2,6 @@
 @api=/api
 
 
-
-
-#### get all post
-GET {{baseUrl}}{{api}}/posts
-Accept: application/json
-
-
-
-#### create new post
-POST {{baseUrl}}{{api}}/posts
-Content-Type: application/json
-Accept: application/json
-
-{
-  "title": "First Post",
-  "body": "This is the body text"
-}
-
-
-
-
 #### register auth
 POST {{baseUrl}}{{api}}/register
 Content-Type: application/json
@@ -30,7 +9,7 @@ Accept: application/json
 
 {
     "name": "John Doe",
-    "email": "ni7@gmail.com",
+    "email": "ni1@gmail.com",
     "password":"123456",
     "password_confirmation":"123456"
 }
@@ -51,3 +30,21 @@ Content-Type: application/json
 Accept: application/json
 Authorization: Bearer 6|C9NVHxGOoOwcu6gKMtMAug91JDJti4WBrZ7o8jhD809d572d
 
+
+
+#### get all post
+GET {{baseUrl}}{{api}}/posts
+Accept: application/json
+
+
+
+#### create new post
+POST {{baseUrl}}{{api}}/posts
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer 7|MPCSm30buB7Zl2gzNyDtIg5yr0mhiVxK813jMvE68ef54fc0
+
+{
+  "title": "First Post",
+  "body": "This is the body text"
+}
