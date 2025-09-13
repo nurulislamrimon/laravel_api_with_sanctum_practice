@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -8,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 // })->middleware('auth:sanctum');
 
 
-Route::get('/', function () {
-    return response()->json(['message' => 'API is working']);
-});
+// Route::get('/', function () {
+//     return response()->json(['message' => 'API is working']);
+// });
+
+Route::apiResource('posts', PostController::class);

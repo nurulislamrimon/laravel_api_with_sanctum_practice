@@ -1,0 +1,23 @@
+@baseUrl = http://localhost:8000
+@api=/api
+
+
+
+
+#### get all post
+GET {{baseUrl}}{{api}}/posts
+Accept: application/json
+
+
+
+#### create new post
+# POST {{baseUrl}}{{api}}/posts
+# Content-Type: application/json
+
+# {
+#   "title": "First Post",
+#   "body": "This is the body text"
+# }
+
+
+
